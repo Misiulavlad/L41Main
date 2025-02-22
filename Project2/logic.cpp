@@ -19,8 +19,8 @@ void print_matrix(int matrix[N][N]) {
 
 int sum(int matrix[N][N]) {
 	int sum = 0;
-	for (int i = 0; i < N; i++) {
-		for (int j = i + 1; j < N; j++) {
+	for (int i = 1; i < N; i++) {
+		for (int j = 0; j < N; j++) {
 			sum += matrix[i][j];
 		}
 	}
